@@ -15,6 +15,8 @@ class Song
     split_file = filename.split(" - ")
     song_name = split_file[1] #I think it was 1, going by memory though
     new_song = self.new(song_name)
+    new_song.artist_name = artist
+    new_song
     #now do the same with artist
     #and think about associations
     #also think about what they want you to return at the end
