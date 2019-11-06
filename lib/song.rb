@@ -20,4 +20,9 @@ class Song
     #and think about associations
     #also think about what they want you to return at the end
   end
+  
+   def artist_name=(name)
+    self.artist = Artist.find_or_create_by_name(name)
+    artist.add_song(self)
+  end
 end
